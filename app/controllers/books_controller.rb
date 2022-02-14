@@ -32,7 +32,7 @@ class BooksController < ApplicationController
             redirect_to book_path(@book.id)
         else
             flash.now[:alert] = "更新できませんでした"
-            render :show
+            render :edit
         end
     end
 
